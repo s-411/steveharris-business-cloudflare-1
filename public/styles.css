@@ -48,7 +48,6 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
-    animation: fadeInUp 0.8s ease-out;
 }
 
 /* Typography */
@@ -73,14 +72,13 @@ body {
 }
 
 .sub-subheadline {
-    font-size: 32px;
+    font-size: 18px;
     margin-bottom: 2.5rem;
     opacity: 0.9;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 300;
-    font-style: italic;
     line-height: 1.4;
 }
 
@@ -129,18 +127,6 @@ body {
     transform: translateY(0);
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Responsive adjustments */
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
@@ -154,7 +140,7 @@ body {
     }
 
     .sub-subheadline {
-        font-size: 28px;
+        font-size: 16px;
         max-width: 750px;
     }
 }
@@ -178,7 +164,7 @@ body {
     }
 
     .sub-subheadline {
-        font-size: 22px;
+        font-size: 16px;
         max-width: 100%;
     }
 
@@ -210,7 +196,7 @@ body {
     }
 
     .sub-subheadline {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .video-container {
