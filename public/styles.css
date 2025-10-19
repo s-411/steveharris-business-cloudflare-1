@@ -52,26 +52,23 @@ body {
 }
 
 /* Typography */
-.headline {
+.preheadline {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: #DCEA22;
-    font-feature-settings: "liga" 1, "calt" 1, "dlig" 1, "kern" 1;
-    font-variant-ligatures: common-ligatures discretionary-ligatures;
-    font-variant-numeric: proportional-nums;
 }
 
-.subheadline {
-    font-size: 90px;
+.headline {
+    font-size: 50px;
     margin-bottom: 1.5rem;
     opacity: 0.95;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: normal;
+    font-weight: 700;
     line-height: 1.1;
 }
 
@@ -147,12 +144,12 @@ body {
 /* Responsive adjustments */
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
-    .headline {
+    .preheadline {
         font-size: 28px;
     }
 
-    .subheadline {
-        font-size: 64px;
+    .headline {
+        font-size: 42px;
         max-width: 900px;
     }
 
@@ -169,13 +166,13 @@ body {
         background-attachment: scroll;
     }
 
-    .headline {
+    .preheadline {
         font-size: 24px;
         margin-bottom: 1rem;
     }
 
-    .subheadline {
-        font-size: 48px;
+    .headline {
+        font-size: 36px;
         margin-bottom: 1.5rem;
         max-width: 100%;
     }
@@ -203,12 +200,12 @@ body {
         padding: 1rem;
     }
 
-    .headline {
+    .preheadline {
         font-size: 20px;
     }
 
-    .subheadline {
-        font-size: 36px;
+    .headline {
+        font-size: 28px;
         line-height: 1.15;
     }
 
