@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: #ffffff;
     min-height: 100vh;
@@ -20,10 +20,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-image:
-        linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)),
-        url('/background.jpg');
+    background: #050607;
+    background-image: url('/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -59,19 +57,30 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: -0.02em;
+    color: #DCEA22;
 }
 
 .subheadline {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     opacity: 0.95;
-    max-width: 600px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+}
+
+.sub-subheadline {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     font-weight: 300;
+    font-style: italic;
 }
 
 /* Video container */
@@ -92,13 +101,13 @@ body {
 
 /* CTA Button */
 .cta-button {
-    background: #ffffff;
-    color: #667eea;
+    background: #DCEA22;
+    color: #000000;
     border: none;
-    padding: 1rem 3rem;
+    padding: 16px 24px;
     font-size: 1.125rem;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -108,7 +117,7 @@ body {
 }
 
 .cta-button:hover {
-    background: #f8f9ff;
+    background: #e8f542;
     transform: translateY(-2px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
