@@ -13,22 +13,19 @@ body {
     overflow-x: hidden;
 }
 
-/* Container with background image */
+/* Container with 3D gradient background effect */
 .container {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: #050607;
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 30%, #404040 60%, #6a6a6a 85%, #808080 100%);
     position: relative;
+    overflow: hidden;
 }
 
-/* Alternative gradient backgrounds (if no image is used) */
+/* 3D depth effect overlay */
 .container::before {
     content: '';
     position: absolute;
@@ -36,8 +33,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background:
+        radial-gradient(ellipse at center top, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
+        radial-gradient(ellipse at center bottom, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -52,12 +50,13 @@ body {
 
 /* Typography */
 .preheadline {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 100px;
+    font-weight: 100;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: #DCEA22;
+    text-align: center;
 }
 
 .headline {
@@ -67,8 +66,9 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
+    text-align: center;
 }
 
 .sub-subheadline {
@@ -131,7 +131,7 @@ body {
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
     .preheadline {
-        font-size: 28px;
+        font-size: 70px;
     }
 
     .headline {
@@ -149,11 +149,10 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
-        background-attachment: scroll;
     }
 
     .preheadline {
-        font-size: 24px;
+        font-size: 48px;
         margin-bottom: 1rem;
     }
 
@@ -187,7 +186,7 @@ body {
     }
 
     .preheadline {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .headline {
